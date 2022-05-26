@@ -1,0 +1,15 @@
+body{
+
+background-image: url("silverware.jpg");
+
+}
+h1{
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+a{
+    color: darkgoldenrod;
+}
+.Usercomment{
+    background-color: gold;
+}
