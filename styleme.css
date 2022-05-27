@@ -8,3 +8,18 @@
   /*  img{
         border-radius: 50%;
     }*/
+    body{
+        background-color: rgb(112, 90, 80);
+    }
+h1{
+ color: cadetblue;
+ font-size: 40px;
+ margin: 0px;
+ text-align: left;
+}
+h2{
+ color: cadetblue;
+ font-size: 24px;
+ margin: 0px;
+ text-align: left;
+}
