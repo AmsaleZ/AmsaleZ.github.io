@@ -4,12 +4,29 @@
 body{
     background-color: black;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
 }
 .box{
 flex: 25%;
-padding: 20%;
-
+padding: 20px;
+align-items: center;
+box-sizing: content-box;
 }
 .container{
-    padding-bottom: 0%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footr{
+    padding-right: 15px;
+
+}
+.foot{
+    border-top: 0.5px solid gray;
+    padding: 80px;
+    margin-top: 120px;
+    
+
 }

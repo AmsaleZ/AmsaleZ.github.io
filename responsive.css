@@ -33,6 +33,18 @@ body{
             display: grid;
             grid-template-columns: reapt;
         }
+        .column {
+            display: flex;
+            flex-wrap: wrap;
+            height:500px;
+        }
+        .menubar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            background-color: darkslategray;
+        }
 .column1{
     background-color: #aaa;
     padding: 10%;
@@ -46,6 +58,16 @@ body{
 .column3{
     background-color: #ccc;
     padding: 10%;
+}
+@media screen and (max-width: 600px) {
+
+    .column1, .column3 {
+        flex: 40%;
+    }
+    .column2{
+        flex-wrap: wrap;
+        flex-grow: 3;
+    }
 }
 .footer{
     background-color: darkslategray;
