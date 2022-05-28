@@ -1,0 +1,15 @@
+.tweet{
+    list-style: url(img/tweet.jpg);
+}
+body{
+    background-color: black;
+    color: white;
+}
+.box{
+flex: 25%;
+padding: 20%;
+
+}
+.container{
+    padding-bottom: 0%;
+}

@@ -6,8 +6,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-   /* background-color: cadetblue;
-    padding: 0%;*/
+  
   display: flex;
   flex-direction: row;
     grid-template-columns: repeat(12,1fr);
@@ -18,8 +17,7 @@ body{
     padding: 10%; 
   grid-column: 1/-1;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+ 
 }
 
 .Menu1{ 
@@ -36,17 +34,17 @@ body{
             grid-template-columns: reapt;
         }
 .column1{
-    background-color: darksalmon;
+    background-color: #aaa;
     padding: 10%;
     grid-column: 1/2;
 }
 .column2{
-    background-color: darkcyan;
+    background-color: #bbb;
     padding: 10%;
-    grid-column: ;
+    grid-column: auto;
 }
 .column3{
-    background-color: blueviolet;
+    background-color: #ccc;
     padding: 10%;
 }
 .footer{
