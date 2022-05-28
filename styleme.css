@@ -1,15 +1,12 @@
-#mood1{
-    float: left;
-}
-#mood2{
-    float: right;
-}
 
-  /*  img{
-        border-radius: 50%;
-    }*/
+
+    im{
+        padding: auto;
+        vertical-align: baseline;
+    }
     body{
         background-color: rgb(112, 90, 80);
+        color: white;
     }
 h1{
  color: cadetblue;
