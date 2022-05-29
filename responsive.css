@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+   font-family: Arial;
 }
 *{
     box-sizing: border-box;
@@ -13,17 +13,44 @@ body{
     grid-template-rows: 5vh 90vh 5vh;
 }
 .header{
+<<<<<<< HEAD
     background-color: skyblue;
     padding: 10%; 
   grid-column: 1/-1;
   display: flex;
+=======
+    background-color: darkcyan;
+    padding:20%;
+    text-align: center;
+  
+  }
+  .column{
+display: flex;
+flex-wrap: wrap;
+height: 500px;
+}
+.menubar{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    background-color: darkslategray;
+}
+.menubar a{
+    color: white;
+   padding: 14px 20px;
+   text-decoration: none;
+   text-align: center;
+>>>>>>> 613f1d554b13c161cc9d409fe891fb1ec51fa192
  
 }
-
 .Menu1{ 
-   
-    display: grid;
-    grid-template-columns: subgrid;
+   color: white;
+   padding: 14px 20px;
+   text-decoration: none;
+   text-align: center;
+
 }
     .Menu2{ 
         display: grid;
@@ -33,6 +60,7 @@ body{
             display: grid;
             grid-template-columns: reapt;
         }
+<<<<<<< HEAD
         .column {
             display: flex;
             flex-wrap: wrap;
@@ -58,6 +86,37 @@ body{
 .column3{
     background-color: #ccc;
     padding: 10%;
+=======
+        .column{
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+        }
+.column1{
+    flex: 33%;
+    background-color: darkgrey;
+    padding: 20px;
+    
+}
+.column2{
+    flex: 33%;
+    background-color;
+    padding: 20px;
+}
+.column3{
+    flex: 33%;
+    background-color: darkgray;
+    padding: 20px;
+}
+@media  screen and(max-width:600ps) {
+    .column1,.column3{
+        flex:40%
+    }
+    .column2{
+        flex-wrap: wrap;
+        flex-grow: 3;
+    }
+>>>>>>> 613f1d554b13c161cc9d409fe891fb1ec51fa192
 }
 @media screen and (max-width: 600px) {
 
@@ -71,7 +130,7 @@ body{
 }
 .footer{
     background-color: darkslategray;
-    padding: 10%;
-    grid-column: 1/-1;
-    justify-content: center;
+    padding: 20px;
+    text-align: center;
+   
 }
