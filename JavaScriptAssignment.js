@@ -70,7 +70,7 @@ console.log("Expected output of product of array element(1,2,3,4) is 24  " + myF
  
  //Question No 8a Elements multiplied by 10
   
-  const g = a.map(function(elem, i, array) {
+  const g = a.map(function(elem,i, array) {
     return elem * 10;})
     console.log( g)
     
