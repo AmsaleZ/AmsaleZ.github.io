@@ -69,6 +69,7 @@ console.log("Expected output of product of array element(1,2,3,4) is 24  " + myF
  console.log("Expected output of reversing a 'jag testar' is 'ratset gaj'  " + myFunctionTest('ratset gaj', reverse("jag testar")));
  
  //Question No 8a Elements multiplied by 10
+ const a = [1,3,5,3,3]; 
   
   const g = a.map(function(elem,i, array) {
     return elem * 10;})
