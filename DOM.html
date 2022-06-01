@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+background-color: lightblue;
+
+
+}
+    </style>
+    <script>
+        //create element - div,p,img, a, table, 
+        //update element - attributes as well innerHTML
+        //remove element
+        //replace 
+     
+        function clicked() {
+            let valuep = $("#inputID").val();
+            let label = document.createElement("label");
+            label.innerHTML = valuep;
+            document.getElementById("inputID").replaceWith("Student ",valuep);
+
+            
+
+            let txt = $("#txt").val();
+            let textarea = document.createElement("p");
+            textarea.innerHTML = txt;
+            document.getElementById("txt").replaceWith(textarea);
+
+            let radp = $("radioDiv").val();
+            let p = document.createElement("p");
+            p.innerHTML = radp;
+            document.getElementById("radioDiv").replaceWith(p);
+            
+
+        }
+        $(document).ready(function(){
+         $("#btn2").click(function(){
+             $("ol").prepend("<li>front item</li>");
+         });
+            $("#btn3").click(function(){
+             $("ol").append("<li>back item</li>");
+         });
+         });
+            // $(function(){
+        // let p = document.createElement("p");
+        // p.setAttribute("id","")
+        // p.innerHTML="Hello";
+
+        // document.getElementById("id").replaceWith(p);
+        // })
+    </script>
+</head>
+
+<body>
+    <h3> Registration </h3>
+    <div id="id">
+         <br>
+       <h4> Name:<span><input type="text" id="inputID" /> <br>
+        <br>Write Comments: <textarea name="textarea" id="txt" cols="30" rows="5"></textarea> <br>
+        Gender:
+         <div style="display: inline-block" id="radioGroup">
+            <input type="radio" name="radio-group"  value="Radio 1">Female</input> 
+            <input type="radio" name="radio-group" value="Radio 2">Male</input> 
+            </div><br>
+        Department:
+        <div id="Department">
+            <input type="checkbox" name="Compro" checked="checked" id="check1" value="Compro">Compro
+            <input type="checkbox" name="Compro" id="check2" value="Compro">MSD
+        </div><br>
+        Courses:
+        <select id="selc"><br>
+            <option value="Option1">WAP</option>
+            <option value="option2" selected> WAA</option>
+            <option value="option3"> SA</option>
+            <option value="option4">EA</option>
+        </select>
+    </div><br>
+    
+     <input type="button" onclick="clicked()" value="Submit" />
+            <button id="btn2">Append before </button>
+            <button id="btn3" >Append After</button>
+</div>
+    <div> 
+            <ol>
+              <li> item </li>
+              <li> item </li>
+              <li> item </li>
+            </ol>
+            </body>
+            </html>
