@@ -20,14 +20,12 @@ background-color: lightblue;
         //update element - attributes as well innerHTML
         //remove element
         //replace 
-     
-        function clicked() {
+    
+                function clicked() {
             let valuep = $("#inputID").val();
             let label = document.createElement("label");
             label.innerHTML = valuep;
             document.getElementById("inputID").replaceWith("Student ",valuep);
-
-            
 
             let txt = $("#txt").val();
             let textarea = document.createElement("p");
@@ -60,6 +58,7 @@ background-color: lightblue;
 </head>
 
 <body>
+   
     <h3> Registration </h3>
     <div id="id">
          <br>
@@ -85,14 +84,14 @@ background-color: lightblue;
     </div><br>
     
      <input type="button" onclick="clicked()" value="Submit" />
-            <button id="btn2">Append before </button>
-            <button id="btn3" >Append After</button>
+         <!--  <button id="btn2">Append before </button>
+            <button id="btn3" >Append After</button>--> 
 </div>
     <div> 
-            <ol>
+            <!-- <ol>
               <li> item </li>
               <li> item </li>
               <li> item </li>
-            </ol>
+            </ol> -->
             </body>
             </html>
