@@ -81,29 +81,34 @@ console.log(indexOfOdd(array));
 //converting String to Array
 let inString="computer";
 function strToArray(inString){
-    let strArray=[];
-    let tempStr="";
-    for( let i=0;i<inString.length;i++){
-        if(inString.charAt(i)==''){
-            strArray.push(tempStr);
-            tempStr=" ";
-            continue;
-        }
-        tempStr+=inString.charAt(i);
+    let arr=[];
+    for(let i=0;i<inString.length;i++){
+        arr.push(inString.charAt(i))
     }
-    strArray.push(tempStr);
-    return strArray
+    return arr;
+    // let strArray=[];
+    // let tempStr="";
+    // for( let i=0;i<inString.length;i++){
+    //     if(inString.charAt(i)==''){
+    //         strArray.push(tempStr);
+    //         tempStr=" ";
+    //         continue;
+    //     }
+    //     tempStr+=inString.charAt(i);
+    // }
+    // strArray.push(tempStr);
+    // return strArray
 }
 console.log(strToArray(inString))
 
 //Array to String
 let inArr=['computer']
 function arrayToString(inArr){
-    let tempStr=""
+    let word=""
     for(let i=0;i<inArr.length;i++){
-        tempStr+=inArr[i];
+        word+=inArr[i];
     }
-    return tempStr;
+    return word;
 }
 console.log(arrayToString(inArr))
 
@@ -146,63 +151,86 @@ function iteratingObject(temp, joinThem, begin) {
 
 let arrayOldYoung=[{name:'Ram',age:20},{name:'Lakshman',age:15}]
 function findOldestPerson(arrayOldYoung) {
-let temp = {};
- for (let i = 0; i < arrayOldYoung.length; i++) {
-        let item = arrayOldYoung[i];
-        let isObject = (typeof item == "object");
- if (i == 0) {
-            for (const key in item) {
-                temp[key] = item[key];
-            }
-        } else {
-       
-            if (temp.age < item.age) {
-                for (const key in item) {
-                    temp[key] = item[key];
-                }
-            }
+    let maxAge= -Infinity;
+    for(let objmax of arrayOldYoung){
+        for(let key in objmax){
+            if(maxAge<objmax.age)
+            maxAge=objmax.age;
         }
+        return objmax.name;
     }
-return temp.name ;
+// let temp = {};
+//  for (let i = 0; i < arrayOldYoung.length; i++) {
+//         let item = arrayOldYoung[i];
+//         let isObject = (typeof item == "object");
+//  if (i == 0) {
+//             for (const key in item) {
+//                 temp[key] = item[key];
+//             }
+//         } else {
+       
+//             if (temp.age < item.age) {
+//                 for (const key in item) {
+//                     temp[key] = item[key];
+//                 }
+//             }
+//         }
+//     }
+// return temp.name ;
 }
 console.log(findOldestPerson(arrayOldYoung))
 
 
-function findYoungestAge(arrarrayOldYoungay) {
- let temp = {};
-for (let i = 0; i < arrayOldYoung.length; i++) {
-        let item = arrayOldYoung[i];
-        let isObject = (typeof item == "object");
-if (i == 0) {
-            for (const key in item) {
-                temp[key] = item[key];
-            }
-        } else {
-            if (temp.age > item.age) {
-                for (const key in item) {
-                    temp[key] = item[key];
-                }
-            }
-        }
+function findYoungestAge(arrayOldYoung) {
+    let minAge= +Infinity;
+    for(let objmin of arrayOldYoung){
+        for(let key in objmin){
+            if(objmin.age<minAge)
+            minAge= objmin.age;
+         }
+    return objmin.age;  
     }
-return temp.age;
+//  let temp = {};
+// for (let i = 0; i < arrayOldYoung.length; i++) {
+//         let item = arrayOldYoung[i];
+//         let isObject = (typeof item == "object");
+// if (i == 0) {
+//             for (const key in item) {
+//                 temp[key] = item[key];
+//             }
+//         } else {
+//             if (temp.age > item.age) {
+//                 for (const key in item) {
+//                     temp[key] = item[key];
+//                 }
+//             }
+//         }
+//     }
+// return temp.age;
 }
 console.log(findYoungestAge(arrayOldYoung))
 
 
 function findYounger(arrayOldYoung) {
-let list = [];
-    for (let i = 0; i < arrayOldYoung.length; i++) {
-        let obj = arrayOldYoung[i];
-       if (obj.age > 14 && obj.age < 17) {
-            let temp = {};
-            for (let key in obj) {
-                temp[key] = obj[key];
-            }
-           list.push(temp);
+    for(let objY of arrayOldYoung){
+        for(let key in objY){
+            if(objY.age>14 && objY.age<17)
+            return objY.name;
         }
+        
     }
- return list;
+// let list = [];
+//     for (let i = 0; i < arrayOldYoung.length; i++) {
+//         let obj = arrayOldYoung[i];
+//        if (obj.age > 14 && obj.age < 17) {
+//             let temp = {};
+//             for (let key in obj) {
+//                 temp[key] = obj[key];
+//             }
+//            list.push(temp);
+//         }
+//     }
+//  return list;
 }
 console.log(findYounger(arrayOldYoung))
 
