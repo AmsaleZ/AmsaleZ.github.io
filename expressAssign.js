@@ -9,11 +9,7 @@ var path=require("path");
 app.get("/", function(req, res, next) {
     res.send("<h1>Welcome</h1>");
 })
-
-app.post("/product",function(req,res,next){
-    console.log('In the Post');
-});
-app.use('/product', (req, res, next) => {
+app.use('/add', (req, res, next) => {
     console.log(req.body); 
 res.redirect('/view');
     });
