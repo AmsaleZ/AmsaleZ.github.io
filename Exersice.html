@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Exercise</title>
+    <script> 
+        let objarray=[{name:"car",type:"Toyota"},{name:"Car",type:"Ford"},{name:"apple",type:"fruit"},{name:"dog",type:"animal"}]
+        let array= ["car","plane","Motorbike","ship"];
+       
+        $(function(){
+         let element=document.createElement("ul")
+        element.innerHTML=""
+        for( let y of array){
+        element.innerHTML=element.innerHTML+ "<li>"+y+"</li>"
+        }
+       console.log(element);
+       $("#motor").append(element);
+
+       
+ let element1=document.createElement("ol");
+element1.innerHTML=""
+for(let obj of objarray){
+ element1.innerHTML+="<li>"
+for(let key in obj){
+ element1.innerHTML+=obj[key]+"  "
+}
+element1.innerHTML+="</li>"
+}
+
+$("#abi").append(element1);
+
+// let element2=document.createElement("table");
+// element2.innerHTML=""
+// for(let obj of objarray){
+//  element1.innerHTML+="<th>"
+// for(let key in obj){
+//  element2.innerHTML+=obj[key]+"  "
+// }
+// element2.innerHTML+="</td>"
+// }
+// $("#a").append(element2);
+// let atg = document.createElement("p");
+//         atg.innerHTML =
+//           "<table><tr><th>Header</th><th>Header2</th></tr><tr><td>data 1</td><td>data 2</td></tr></table>";
+
+//         let tableContent = createTable(mainObj);
+       
+ });
+</script>
+ 
+  </head>
+<body>
+  <div id="motor"></div>
+ <div id="abi"></div>
+ <!-- <div id="a"><p>Table </p></div> -->
+ <!-- <div id="p"><p>Table </p></div> -->
+</body>
+</html>
