@@ -100,19 +100,14 @@
     return myTable;
   }
       //Main Object
-        let mainObj = [
-          { name: "David", age: 28, address: "Iwoa" },
-          { name: "Sam", age: 30, address: "VA" },
-          { name: "Mule", age: 15, address: "Awasa" },
-          { name: "Eshe", age: 17, address: "Addis Ababa" },
-          { name: "Fish", age: 40, address: "DD" },
-        ];
+        let mainObj = [ { name: "David", age: 28, address: "Iwoa" }, { name: "Sam", age: 30, address: "VA" },
+          { name: "Mule", age: 15, address: "Awasa" },{ name: "Eshe", age: 17, address: "Addis Ababa" },{ name: "Fish", age: 40, address: "DD" }, ];
 
         //Adding Table ol ul
 
         let atg = document.createElement("p");
         atg.innerHTML =
-          "<table><tr><th>Header</th><th>Header2</th></tr><tr><td>data 1</td><td>data 2</td></tr></table>";
+          "<table><tr></tr><tr></tr></table>";
 
         let tableContent = createTable(mainObj);
         // console.log(tableContent);
